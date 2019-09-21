@@ -38,3 +38,6 @@ print(list1)
 #clear
 list1.clear()
 print(list1)
+
+#Check list of List methods
+#p =help(list.__contains__) :used to defination

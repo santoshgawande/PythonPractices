@@ -13,7 +13,11 @@ for key in dict1 :
 #both key and vallue can be access using enumerate()
 for key,value in enumerate(dict1):
     print(key,value)
-
+print('\nkey-value using dict1.items()\n')
+#usinf items() we can acces both key-value from dictonary
+for k,val in dict1.items():
+    print(k,val)
+print('\n list of key only from dict \n')
 #Operations :
 #print list of key only
 print(list(dict1))
@@ -21,7 +25,7 @@ print(list(dict1))
 #del:key:value pair deleted
 del (dict1['key'])
 print(dict1)
-
+print('\n')
 #check key is present or not
 print('key' in dict1)
 
