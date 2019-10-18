@@ -6,11 +6,15 @@ print("original dictionary: ", dict1)
 
 print(dict1['name'],"\n")
 
+#create dict 
+d = dict([(1,6),(7,8)])
+
+
 #always use 'in' for access dictinary 
 for key in dict1 :
     print(dict1[key])
 
-#both key and vallue can be access using enumerate()
+#both key and value can be access using enumerate()
 for key,value in enumerate(dict1):
     print(key,value)
 print('\nkey-value using dict1.items()\n')
@@ -18,9 +22,30 @@ print('\nkey-value using dict1.items()\n')
 for k,val in dict1.items():
     print(k,val)
 print('\n list of key only from dict \n')
+
 #Operations :
+#access 
+d2 = {'one' : 1, 'two' : 2}
+
+#access using key
+print(d2['one'])
+print(d2.get('one'))
+
 #print list of key only
 print(list(dict1))
+
+#insert into dict
+d1 ={}
+d1['h'] = 'hello'
+
+#adding multi value
+d['value'] = 1,2,3,4,5
+print(d)
+
+#update value
+d = {'key' : 'value'}
+d['key'] = 'high'
+print(d)
 
 #del:key:value pair deleted
 del (dict1['key'])
