@@ -6,3 +6,5 @@ print(d)
 #why this is happen ? : Because True = 1 = 1.0 are same in python 
 res = True == 1 == 1.0
 print(res)
+
+
